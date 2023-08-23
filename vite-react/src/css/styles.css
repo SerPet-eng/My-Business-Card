@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-primary-100: hsl(0, 0, 100%%);
+    --clr-primary-90: hsl(36, 100%, 90%);
+    --clr-primary-80: hsl(36, 100%, 80%);
+    --clr-primary-70: hsl(36, 100%, 70%);
+    --clr-primary-60: hsl(36, 100%, 60%);
+    --clr-primary-50: hsl(36, 100%, 50%);
+    --clr-primary-40: hsl(36, 100%, 40%);
+    --clr-primary-30: hsl(36, 100%, 30%);
+    --clr-primary-20: hsl(36, 100%, 20%);
+    --clr-primary-10: hsl(36, 100%, 10%);
+
+    --clr-secondary-100: hsl(0, 0, 100%%);
+    --clr-secondary-90: hsl(6, 100%, 90%);
+    --clr-secondary-80: hsl(6, 100%, 80%);
+    --clr-secondary-70: hsl(6, 100%, 70%);
+    --clr-secondary-60: hsl(6, 100%, 60%);
+    --clr-secondary-50: hsl(6, 100%, 50%);
+    --clr-secondary-40: hsl(6, 100%, 40%);
+    --clr-secondary-30: hsl(6, 100%, 30%);
+    --clr-secondary-20: hsl(6, 100%, 20%);
+    --clr-secondary-10: hsl(6, 100%, 10%);
+
+    --clr-neutral-800: hsl(0deg, 0%, 80%);
+    --clr-neutral-700: hsl(0deg, 0%, 70%);
+    --clr-neutral-600: hsl(195deg, 10%, 60%);
+    --clr-neutral-500: hsl(195deg, 10%, 45%);
+    --clr-neutral-400: hsl(195deg, 10%, 35%);
+    --clr-neutral-300: hsl(195deg, 10%, 25%);
+    --clr-neutral-200: hsl(195deg, 10%, 15%);
+    --clr-neutral-100: hsl(195deg, 30%, 8%);
+
+
+    --fw-900: 900;
+    --fw-800: 800;
+    --fw-700: 700;
+    --fw-600: 600;
+    --fw-500: 500;
+    --fw-400: 400;
+    --fw-300: 300;
+    --fw-200: 200;
+    --fw-100: 100;
+
+    --fs-200: clamp(.66rem, .83rem - .24vw, .78rem);
+    --fs-300: clamp(1rem, .94rem - .02vw, 1.125rem);
+    --fs-400: clamp(1.13rem, 1.05rem + .37vw, 1.31rem);
+    --fs-500: clamp(1.35rem, 1.15rem + .99vw, 1.86rem);
+    --fs-600: clamp(1.62rem, 1.23rem + 1.96vw, 2.62rem);
+    --fs-700: clamp(1.94rem, 1.25rem + 3.45vw, 3.71rem);
+    --fs-800: clamp(2.33rem, 1.2rem + 5.69vw, 5.25rem);
+    --fs-900: clamp(2.8rem, 1rem + 9.01vw, 7.42rem);
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    background: linear-gradient(45deg, red 60%, pink 60%) no-repeat;
+    background-attachment: fixed;
+  }
+
+a {
+    text-decoration: none;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-10);
+    font-size: var(--fs-300);
+}
+
+.main--container {
+    min-height: 400px;
+    border: 1px solid green;
+    margin: 10px auto 0 auto;
+    border-radius: 30px 30px 0 0;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+}
+
+.main--container > img {
+    width: 25%;
+    background-color: var(--clr-primary-70);
+    border: 10px solid var(--clr-secondary-40);
+    border-radius: 65% 35% 60% 40% / 45% 40% 60% 60% ;
+}
+
+.main--section {
+    line-height: 0.5rem;
+}
+
+.main--section > h1 {
+    font-weight: var(--fw-900);
+    font-size: var(--fs-600);
+}
+
+.main--section > h3 {
+    font-weight: var(--fw-600);
+    font-size: var(--fs-400);
+}
+
+.main--section > h4 {
+    font-weight: var(--fw-600);
+}
+
+.sub-section1, .sub-section2, .sub-section3 {
+    display: flex;
+    align-items: center;
+}
+
+.sub-section2 > img {
+    height: 50px;
+}
+
+.vertical-line {
+    border: 2px solid var(--clr-secondary-50);
+    height: 300px;
+    margin: auto 60px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 50px;
+    width: 100%;
+    background-color: var(--clr-secondary-10);
+    border-radius: 0 0 30px 30px;
+
+    color: var(--clr-primary-90);
+}
+
+.footer p {
+    color: var(--clr-primary-90);
+    font-weight: var(--fw-300);
+}
+

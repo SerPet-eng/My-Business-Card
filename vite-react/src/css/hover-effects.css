@@ -1,0 +1,44 @@
+.sub-section1 a, 
+.sub-section2 a, 
+.sub-section3 a,
+.main--container h1,
+.main--container h3,
+.main--profile-picture,
+.footer--address p,
+#contact1,
+#contact2,
+.vertical-line {
+    transition: .3s ease;
+}
+
+.sub-section1 a:hover ,
+.sub-section2 a:hover, 
+.sub-section3 a:hover {
+    font-size: 1.125rem;
+}
+
+.main--container h1:hover,
+.sub-section1 a:hover ,
+.sub-section2 a:hover, 
+.sub-section3 a:hover {
+    color: white;
+    text-shadow: 1px 0 5px black;
+}
+
+.main--container h3:hover {
+    font-weight: var(--fw-700);
+    color: white;
+    text-shadow: 1px 0 5px black;
+}
+
+.main--profile-picture:hover {
+    border-radius: 35% 65% 25% 80% / 50% 35% 70% 40% ;
+    background-color: var(--clr-primary-80);
+}
+
+#contact1:hover, #contact2:hover, .footer--address p:hover {
+    font-size: 1.125rem;
+    font-weight: var(--fw-600);
+    text-shadow: 1px 0 5px black;
+    cursor: pointer;
+}
